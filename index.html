@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatives Creation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <input type="radio" class="hbtn" />
+        <input type="radio" class="hbtn" />
+        <input type="radio" class="hbtn" />
+      </header>
+      <main>
+        <section class="left">
+          <h1>Filter By :</h1>
+
+          <div class="filterBox">
+            <div class="colorbox">
+              <h3>Color</h3>
+              <div class="clr" id="clr">
+                <input readonly class="leftclrbtn" name="lc" />
+                <input readonly class="leftclrbtn" name="lc" />
+                <input readonly class="leftclrbtn" name="lc" />
+                <input readonly class="leftclrbtn" name="lc" />
+                <input readonly class="leftclrbtn" name="lc" />
+              </div>
+            </div>
+
+            <div class="searchbox">
+              <h3>Title/Subtitle</h3>
+              <input type="search" class="search" name="tsinput" />
+            </div>
+          </div>
+
+          <div class="progressBar">
+            <input type="range" min="0" max="100" value="0" class="rangebar" />
+            <label for=""><span id="spancount">0</span>/5 Creatives</label>
+          </div>
+          <button class="addBtn">+Add Creatives</button>
+
+          <div class="creatives"></div>
+        </section>
+
+        <section class="right">
+          <h1 class="rightheading">Creative Creation</h1>
+          <span class="cross">&Cross;</span>
+
+          <div class="addInput">
+            <label for="" class="label">Title</label>
+            <input type="text" class="right-input" id="titleInput" />
+            <label for="" class="label">Subtitle</label>
+            <input type="text" class="right-input" id="subtitleInput" />
+          </div>
+          <h3>Backgound Color</h3>
+
+          <div class="rightbtn">
+            <input readonly class="rightclrbtn" />
+            <input readonly class="rightclrbtn" />
+            <input readonly class="rightclrbtn" />
+            <input readonly class="rightclrbtn" />
+            <input readonly class="rightclrbtn" />
+          </div>
+
+          <button class="donebtn" disabled>Done</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
