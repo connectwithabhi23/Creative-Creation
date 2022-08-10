@@ -1,7 +1,7 @@
 # Project Title - Creative Page
 
 ## Description
-  The Creative Page website helps to create containt and user can choose background color according given options.
+  The Creative Page website helps to create content and user can choose background color according given options.
 User can also filter Creatives according to title, subtitle or background color of creative.
 
 ### How to use
