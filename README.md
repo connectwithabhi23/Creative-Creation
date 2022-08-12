@@ -1,4 +1,4 @@
-# Project Title - Creative Page
+# Project Title - Creative Creation
 
 ## Description
   The Creative Page website helps to create content and user can choose background color according given options.
