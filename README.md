@@ -15,7 +15,7 @@ User can also filter Creatives according to title, subtitle or background color 
  Semantic HTML, CSS and Javascript
  
 ## What I learned
-HTML flexbox , Eventlistners and filter in Javascript
+HTML flexbox , Eventlistners in Javascript
  
 ## Deployment
 the web app is deployed using Netlify. Live Link URL : https://precious-palmier-8aad15.netlify.app/
