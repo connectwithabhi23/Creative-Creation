@@ -157,7 +157,7 @@ donebtn.addEventListener("click", (event) => {
   titleInput.value = "";
   subtitleInput.value = "";
   color = -1;
-  //rightsection.style.display = "none";
+  rightsection.style.display = "none";
   addbtn.disabled = false;
 });
 
