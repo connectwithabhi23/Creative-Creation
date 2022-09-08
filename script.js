@@ -52,7 +52,6 @@ leftclrbox.addEventListener("click", (event) => {
 filterInput.addEventListener("input", (event) => {
   console.log(event);
   if (searchclr === -1) {
-    console.log(searchclr);
     for (let element of creativedivs) {
       if (element.classList.contains(filterInput.value)) {
         if (element.style.display === "none") {
@@ -62,8 +61,9 @@ filterInput.addEventListener("input", (event) => {
         element.style.display = "none";
       }
     }
-  } else {
-    console.log(searchclr);
+  }
+  else {
+   
     for (let element of creativedivs) {
       if (
         element.classList.contains(filterInput.value) &&
@@ -74,7 +74,8 @@ filterInput.addEventListener("input", (event) => {
         } else {
           element.style.display = "block";
         }
-      } else {
+      } 
+      else {
         element.style.display = "none";
       }
     }
@@ -91,6 +92,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
+// To add bg color to all buttons by fetching colors from the API
 async function addColors() {
   let response = await fetch(url);
   let data = await response.json();
@@ -105,7 +107,6 @@ async function addColors() {
   }
 }
 
-// To add bg color to all buttons by fetching colors from the API
 addColors();
 
 // To open the right section after clicking on add btn
@@ -145,30 +146,25 @@ donebtn.addEventListener("click", (event) => {
   let para = document.createElement("p");
   heading.innerText = title;
   para.innerText = subTitle;
+  
   eachcreative.appendChild(heading);
   eachcreative.appendChild(para);
-
   eachcreative.style.backgroundColor = color;
-  console.log(eachcreative);
-
+  
   range.value = counts * 20;
   creativecount.innerHTML = counts;
-
   creativeContainer.appendChild(eachcreative);
   titleInput.value = "";
   subtitleInput.value = "";
   color = -1;
-  rightsection.style.display = "none";
-  console.log(creativedivs);
+  //rightsection.style.display = "none";
   addbtn.disabled = false;
 });
 
 //To select color for creating creative
 righcolordiv.addEventListener("click", (event) => {
-  console.log(event);
   if (event.target.tagName === "INPUT") {
     color = event.target.id;
-
     if (subtitleInput !== "" && titleInput !== "") donebtn.disabled = false;
   }
 });
