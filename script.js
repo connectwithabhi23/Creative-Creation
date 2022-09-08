@@ -50,7 +50,7 @@ leftclrbox.addEventListener("click", (event) => {
 });
 
 filterInput.addEventListener("input", (event) => {
-  console.log(event);
+
   if (searchclr === -1) {
     for (let element of creativedivs) {
       if (element.classList.contains(filterInput.value)) {
